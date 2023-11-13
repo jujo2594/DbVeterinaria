@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class State
+public partial class State : BaseEntity
 {
-    public int Id { get; set; }
-
     public string NombreDepartamento { get; set; }
 
     public int IdPaisFk { get; set; }

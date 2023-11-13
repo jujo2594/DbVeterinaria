@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class Clientphone
+public partial class Clientphone : BaseEntity
 {
-    public int Id { get; set; }
-
     public string Numero { get; set; } = null!;
 
     public int IdClienteFk { get; set; }

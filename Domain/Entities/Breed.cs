@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class Breed
+public partial class Breed : BaseEntity
 {
-    public int Id { get; set; }
-
     public string NombreRaza { get; set; } = null!;
 
     public virtual ICollection<Pet> Pets { get; set; } = new List<Pet>();

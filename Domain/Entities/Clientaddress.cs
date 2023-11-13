@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class Clientaddress
+public partial class Clientaddress : BaseEntity
 {
-    public int Id { get; set; }
-
     public string TipoVia { get; set; } = null!;
 
     public int NumeroPri { get; set; }

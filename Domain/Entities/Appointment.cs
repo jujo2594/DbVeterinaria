@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class Appointment
+public partial class Appointment : BaseEntity
 {
-    public int Id { get; set; }
-
     public DateOnly Fecha { get; set; }
 
     public TimeOnly Hora { get; set; }

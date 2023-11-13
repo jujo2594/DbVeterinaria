@@ -2,10 +2,11 @@ using System.Linq.Expressions;
 using Domain.Interfaces;
 using Persistence.Data;
 using Microsoft.EntityFrameworkCore;
+using Domain.Entities;
 
 namespace Application.Repositories;
 
-public class GenericRepository<T> : IGenericRepository<T>
+public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 {
     private readonly dbVeterinariaContext _context;
 

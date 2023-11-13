@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class Refreshtoken
+public partial class Refreshtoken : BaseEntity
 {
-    public int Id { get; set; }
-
     public string Token { get; set; } = null!;
 
     public bool IsExpired => DateTime.UtcNow >= Expires;

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class City
+public partial class City : BaseEntity
 {
-    public int Id { get; set; }
-
     public string NombreCiudad { get; set; } = null!;
 
     public int IdDepartamentoFk { get; set; }

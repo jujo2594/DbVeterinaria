@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities;
 
 namespace Persistence.Entities;
 
-public partial class User
+public partial class User : BaseEntity
 {
-    public int Id { get; set; }
-
     public string UserName { get; set; } = null!;
 
     public string Email { get; set; } = null!;
